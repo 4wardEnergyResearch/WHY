@@ -1,0 +1,21 @@
+Gerätekategorie;Wahrscheinlichkeit, dass Gerätetyp im Blackoutfall aktiv bleibt.
+;%
+Water;89.11010558
+Cook;76.9591528
+Logistics;26.00352113
+Light;60.61633282
+Cool;17.7676951
+Clean;32.56622517
+Heat;65.54878049
+EMS;32.18531469
+Telework;39.35919056
+Entertainment;42.37373737
+DHW;65.09230769
+Travel;19.80496454
+Hot water;32.33333333
+White;46.10305958
+Fridge;73.82352941
+Communications;55.54487179
+Security;17.22323049
+Smart;15.11926606
+Ventilation;15.03663004
