@@ -226,33 +226,33 @@ timer_script_start = time.time()
 if skip == 0:  # can be skipped if files are already loaded
 
     start_time = time.time()
-    filename_import = os.path.join(target_directory, 'INPUT_blackoutscenarios.csv')
+    filename_import = os.path.join(target_directory, 'Blackout_INPUT_blackoutscenarios.csv')
     input_blackoutscenarios = pd.read_csv(filename_import, header=0, on_bad_lines='skip', delimiter=";", decimal=",")
     input_blackoutscenarios = input_blackoutscenarios.fillna(0)
 
     # read 1kWp PV Generation profile
     # then create scaled generation profile for usecase
-    filename_import = os.path.join(target_directory, 'INPUT_PVGenerationProfile1kWp.csv')
+    filename_import = os.path.join(target_directory, 'Blackout_INPUT_PVGenerationProfile1kWp.csv')
     PVgeneration_profile_1kWp = pd.read_csv(filename_import, header=0, on_bad_lines='skip', delimiter=";", decimal=",")
     PVgeneration_profile_1kWp = PVgeneration_profile_1kWp.fillna(0)
 
     # read load profiles
-    filename_import = os.path.join(target_directory, 'INPUT_consumer_profiles_normal.csv')
+    filename_import = os.path.join(target_directory, 'Blackout_INPUT_consumer_profiles_normal.csv')
     print(target_directory)
     Cons_profiles_normal = pd.read_csv(filename_import, header=0, delimiter=";", decimal=",")
 
-    filename_import = os.path.join(target_directory, 'INPUT_consumer_profiles_blackout.csv')
+    filename_import = os.path.join(target_directory, 'Blackout_INPUT_consumer_profiles_blackout.csv')
     Cons_profiles_blackout = pd.read_csv(filename_import, header=0, delimiter=";", decimal=",")
 
     # read list of consumer profiles
-    filename_import = os.path.join(target_directory, 'INPUT_consumer_list_devices.csv')
+    filename_import = os.path.join(target_directory, 'Blackout_INPUT_consumer_list_devices.csv')
     cons_list = pd.read_csv(filename_import, header=0, delimiter=";", decimal=",")
 
     # read list of installed generation capacities
-    filename_import = os.path.join(target_directory, 'INPUT_generation_list.csv')
+    filename_import = os.path.join(target_directory, 'Blackout_INPUT_generation_list.csv')
     gen_list = pd.read_csv(filename_import, header=0, delimiter=";", decimal=",")
 
-    filename_import = os.path.join(target_directory, 'INPUT_PVgeneration_profiles.csv')
+    filename_import = os.path.join(target_directory, 'Blackout_INPUT_PVgeneration_profiles.csv')
     current_usercase_generation = pd.read_csv(filename_import, header=0, delimiter=";", decimal=",")
 
 
